@@ -1,0 +1,53 @@
+{
+    "name": "simple-timer",
+    "displayName": "Smart Timer",
+    "description": "Умный таймер с управлением и статистикой",
+    "version": "1.1.0",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": ["Other"],
+    "activationEvents": ["*"],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "smart-timer.showTime",
+                "title": "Показать текущее время",
+                "category": "Smart Timer"
+            },
+            {
+                "command": "smart-timer.pause",
+                "title": "Пауза / Продолжить",
+                "category": "Smart Timer"
+            },
+            {
+                "command": "smart-timer.reset",
+                "title": "Сбросить таймер",
+                "category": "Smart Timer"
+            },
+            {
+                "command": "smart-timer.showStats",
+                "title": "Показать статистику",
+                "category": "Smart Timer"
+            },
+            {
+                "command": "smart-timer.addBookmark",
+                "title": "Добавить временную метку",
+                "category": "Smart Timer"
+            },
+            {
+                "command": "smart-timer.showBookmarks",
+                "title": "Показать все временные метки",
+                "category": "Smart Timer"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "smart-timer.pause",
+                "key": "ctrl+alt+p",
+                "mac": "cmd+alt+p"
+            }
+        ]
+    }
+}
